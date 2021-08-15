@@ -8,6 +8,7 @@ let curLanguage = "pirate"
 
 const getEnteredText = async () => {
     const entered_text = inputText.value
+    addToTranslatedBox("")
     let translatedText = await getTranslatedText(entered_text)
     addToTranslatedBox(translatedText === undefined ? "Try again after some time" : translatedText)
 }
