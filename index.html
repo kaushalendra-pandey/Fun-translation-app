@@ -10,10 +10,9 @@
 <body>
     <h1> Fun translation app </h1>
     <div class="input-area">
-        <textarea id="input-text" placeholder="Enter you text here"> </textarea>
+        <textarea id="input-text" placeholder="Enter you text here..."> </textarea>
     </div>
     <div class="translate-button">
-        <button id="button" onclick="getEnteredText()"> Translate ... 🥨</button>
         <select name="language" id="language" onchange="onLanguageChange()">
             <!-- https://api.funtranslations.com/translate/pirate.json?text=Hello%20sir%21%20my%20mother%20goes%20with%20me%20to%20the%20ocean. -->
             <option selected value="pirate"> Pirate </option>
@@ -23,6 +22,7 @@
             <!-- https://api.funtranslations.com/translate/hodor.json?text=I%20will%20hold%20the%20door%20for%20the%20one%20eyed%20raven. -->
             <option value="hodor" > Hodor </option>
         </select>
+        <button id="button" onclick="getEnteredText()"> Translate ... 🥨</button>
     </div>  
     
     
